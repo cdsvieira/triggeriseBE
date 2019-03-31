@@ -12,9 +12,16 @@ import java.util.Map;
  */
 public class Catalog {
 
+	/**
+	 * temporary static catalog for exercise sake
+	 */
 	 private static Map<String, Double> catalog;
 
-	    
+	 /**
+	  * retrieves the price of a certain item
+	  * @param item
+	  * @return
+	  */
 	 public static double getPrice(String item) {
 		 Map<String, Double> catalog= new HashMap<>(3);
 	        catalog.put("HOODIE",20.0);

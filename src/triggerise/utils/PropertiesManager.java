@@ -17,18 +17,38 @@ import java.util.Properties;
  */
 public class PropertiesManager {
 
+	/**
+	 * The file where the properties reside
+	 */
     private File propertiesFile;
 
+    /**
+     * Java property object
+     */
     private Properties properties;
 
+    /**
+     * Creates a valid PropertiesManager
+     * @param propertiesFile the file where the properties reside
+     */
     public PropertiesManager(File propertiesFile) {
         this.properties = initializeProp(propertiesFile);
     }
 
+    /**
+     * Gets a property of a given key
+     * @param key 
+     * @return
+     */
     public String getProperty(String key) {
         return this.properties.getProperty(key).trim();
     }
 
+    /**
+     * Initializes the Porperties java object and loads the properties from the file
+     * @param propertiesFile
+     * @return
+     */
     private Properties initializeProp(File propertiesFile) {
         this.propertiesFile = propertiesFile;
         Properties prop = new Properties();

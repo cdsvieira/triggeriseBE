@@ -19,6 +19,12 @@ public class BulkDiscount extends Discount{
 	 */
 	private int itemDiscount;
 	
+	/**
+	 * Creates a valid BulkDiscount with
+	 * @param bulkAmount the amount of a certain item that need to be bought to apply discount
+	 * @param itemDiscount the discount per item in case it is a bulk buy
+	 * @param discountedItem the item that represents the discount
+	 */
 	public BulkDiscount(int bulkAmount, int itemDiscount, String discountedItem) {
 		super(discountedItem);
 		this.bulkAmount=bulkAmount;

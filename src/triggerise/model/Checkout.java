@@ -42,6 +42,10 @@ public class Checkout implements Checkoutable{
 		
 	}
 	
+	/**
+	 * Retrieves the products list
+	 * @return
+	 */
 	public ProductsList<String> getProductList() {
 		return this.listOfProducts;
 	}
